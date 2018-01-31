@@ -134,6 +134,24 @@ body {
   height: 100%;
   font-family: 'Titillium Web', sans-serif;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background-color: red;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    background-color: mediumpurple;
+  }
+}
+@media (max-width: 400px) {
+  html,
+  body {
+    background-color: dodgerblue;
+  }
+}
 h1,
 h2,
 h3,
@@ -142,6 +160,7 @@ h5 {
   font-family: 'Bangers', cursive;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  color: blue;
 }
 .container {
   width: 880px;
@@ -168,6 +187,10 @@ header nav ul li a:hover {
 header .logo {
   align-self: flex-end;
   margin: 28px 0 0 91px;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
 }
 /* Call To Action (CTA) Styles */
 .cta {
@@ -184,6 +207,9 @@ header .logo {
   flex-flow: column;
   align-items: center;
   margin: 0 82px 0 0;
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .cta .cta-text button {
   border: 1px double black;
@@ -193,10 +219,25 @@ header .logo {
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+  -ms-transition: width 2s;
+  -o-transition: width 2s;
 }
 .cta .cta-text button:hover {
   background: black;
   color: white;
+  width: 300px;
+}
+.cta img {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
 /* Main Content Styles */
 .main-content {
@@ -210,6 +251,11 @@ header .logo {
 .main-content .top-content {
   display: flex;
   justify-content: space-around;
+}
+.main-content .top-content .custom {
+  width: 40px;
+  height: 35px;
+  background-color: blue;
 }
 .main-content .middle-img {
   display: block;

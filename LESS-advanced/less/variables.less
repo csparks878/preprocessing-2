@@ -2,6 +2,10 @@
 
 // Mixins below variables
 
+.heading-color (@color){
+  color: @color;
+}
+
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
@@ -66,4 +70,10 @@
 	-moz-perspective: 	@value;
 	-ms-perspective: 	@value;
 	perspective: 		@value;
+}
+
+.button-mixin (@width, @height, @color){
+  width: @width;
+  height: @height;
+  background-color: @color;
 }
